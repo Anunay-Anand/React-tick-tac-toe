@@ -17,6 +17,7 @@ function deriveActivePlayer(gameTurns) {
 };
 
 function deriveWinner(gameBoard, players) {
+
   let winner;
 
     for(const combination of WINNING_COMBINATIONS) {
@@ -27,10 +28,9 @@ function deriveWinner(gameBoard, players) {
       if(firstSquareSymbol && secondSquareSymbol === thirdSquareSymbol && firstSquareSymbol === thirdSquareSymbol) {
         winner = players[firstSquareSymbol];
       }
-
-      return winner;
-
     }
+
+     return winner;
 
 };
 
